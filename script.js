@@ -1,3 +1,12 @@
+document.addEventListener("DOMContentLoaded", function() {
+  setTimeout(function() {
+      var flashMessage = document.getElementById('flashMessage');
+      if(flashMessage) {
+          flashMessage.style.display = 'none';
+      }
+  }, 3000); 
+});
+
 document.getElementById('flipButton').addEventListener('click', async function() {
   const loading = document.getElementById('loading');
   const photoContainer = document.getElementById('photoContainer');
@@ -10,7 +19,6 @@ document.getElementById('flipButton').addEventListener('click', async function()
   photoContainer.style.display = 'block';
   loading.style.display = 'none';
 });
-
 
 
 
